@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right ,rgb(17, 160, 160),rgb(206, 183, 54),rgb(17, 160, 160));
+}
+.MAin{
+    background: wheat;
+    width:  80%;
+    margin: 100px 100px;
+    border: 2px solid gray;
+    padding: 40px 40px;
+}
+.MAin p{
+    padding: 20px 0;
+}
+/*Pesudo Classes*/
+.btn:link {
+    color: rgb(146, 110, 110);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 10px;
+
+}
+
+
+.btn:active{
+    color: rgb(87, 27, 27);
+    border-left: 10px dashed solid;
+    background: #000;
+}
+ul li:first-child{
+    color: rgb(40, 145, 48);
+    background: #b4a7a7;
+}
+ul li:last-child{
+    color: rgb(255, 153, 0);
+}
+ul li:nth-child(4n){
+ 
+    background: linear-gradient(to right,rgb(55, 136, 55),rgb(167, 45, 45));
+    color:wheat ;
+}
+form input:disabled{
+    background: rebeccapurple;
+    border: 2px solid green;
+}
+form input[type=tel]:focus{
+    border-bottom: 3px solid rgb(180, 107, 11);
+    background: #000;
+}
+/*Pesudo elements*/
+h1::first-letter{
+    color: #b4a7a7;
+}
+::selection{
+    color: red;
+    background-color: #bdaaaa;
+}
+p::first-line{
+    background: #814040;
+}
+
+/*Before And After*/
+.req::after{
+    content: ' *';
+    color: red;
+}
